@@ -38,7 +38,7 @@ func Provider() *schema.Provider {
 			"okadmin_createApiTokens":            resourceCreateAPITokens(),
 			"okadmin_updateOrgContactAddress":    resourceupdateOrgContacts(),
 			"okadmin_pushGroups":                 resourcepushGroups(),
-			"okadmin_blacklistNetworkZone":       resourceblacklistNetworkZone(),
+			// "okadmin_blacklistNetworkZone":       resourceblacklistNetworkZone(),
 		},
 		ConfigureFunc: providerConfigure,
 	}
