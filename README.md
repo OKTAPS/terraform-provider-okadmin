@@ -41,7 +41,7 @@ Example terraform plan:
 provider "okadmin" {
         org_name = "terraform-p2"
         base_url  = "oktapreview.com"
-        api_token = "00jn1UE7gvcY92ohwApoUbRi7GsV93GRQRuZe8W-CC"
+        api_token = "12345678"
 }
 
 resource "okadmin_updateServerSettings" "MyOrg" {
