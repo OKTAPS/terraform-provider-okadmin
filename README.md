@@ -26,9 +26,9 @@ provider "okadmin" {
 
 ## Building The Provider
 
-Clone repository to: `$GOPATH/src/github.com/patluri43/terraform-provider-okadmin`
+Clone repository to: `$GOPATH/terraform-provider-okadmin`
 
-cd $GOPATH/src/github.com/patluri43/terraform-provider-okadmin
+cd $GOPATH/terraform-provider-okadmin
 ```
 ./build.sh
 ```
@@ -59,7 +59,7 @@ resource "okadmin_updateServerSettings" "MyOrg" {
 For More samples. Please go to 
 
 ```
-https://github.com/patluri43/terraform-provider-okadmin/tree/master/samples
+https://github.com/OKTAPS/terraform-provider-okadmin/tree/master/samples
 ```
 
 ## Supported Resources by Provider
