@@ -97,7 +97,7 @@ func resourceCreateOktaServer() *schema.Resource {
 				Type:     schema.TypeString,
 				Computed: true,
 			},
-			"edition_id": &schema.Schema{
+			"edition": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
@@ -156,7 +156,7 @@ type orgsettings struct {
 	Subdomain string    `json:"subdomain"`
 	Name      string    `json:"name"`
 	Website   string    `json:"website"`
-	EditionId string    `json:"editionId"`
+	Edition   string    `json:"edition"`
 	Settings  *Settings `json:"settings,omitempty"`
 	Token     string    `json:"token,omitempty"`
 	TokenType string    `json:"tokenType,omitempty"`
@@ -173,7 +173,7 @@ func resourceCreateOktaServerCreate(d *schema.ResourceData, m interface{}) error
 		Subdomain: d.Get("subdomain").(string),
 		Name:      d.Get("name").(string),
 		Website:   d.Get("website").(string),
-		EditionId: d.Get("edition_id").(string),
+		Edition:   d.Get("edition").(string),
 		Admin: &Admin{
 			Profile: &Profile{
 				FirstName:   d.Get("first_name").(string),
